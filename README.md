@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Responsive Landing Page UI
 A modern, responsive landing page built with HTML and CSS. The design features a flexible layout using Flexbox and media queries for an optimal experience on desktop, tablet, and mobile devices. Includes a navigation bar with a hamburger menu for smaller screens, service sections, call-to-action buttons, and a contact form with embedded Google Maps.
 ## Features
@@ -18,3 +19,6 @@ A modern, responsive landing page built with HTML and CSS. The design features a
 ![Landing Page Screenshot](images/Screenshot%20(77).png)
 ![Landing Page Screenshot](images/Screenshot%20(78).png)
 ![Landing Page Screenshot](images/Screenshot%20(79).png)
+=======
+
+>>>>>>> 9db8d846d3939d461ff06bfa642f39bae01dbf20
