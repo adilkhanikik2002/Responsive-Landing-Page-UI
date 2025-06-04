@@ -1,0 +1,367 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ========== Row 1 ========== */
+.Row1 {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    color: white;
+}
+
+.Row1 .con1 i,
+.Row1 .con2 i {
+    color: chocolate;
+}
+
+/* ========== Row 2 (Navbar) ========== */
+.Row2 {
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.Row2 .con3 {
+    color: blue;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: black;
+    border-radius: 2px;
+}
+
+/* ========== Responsive Nav ========== */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: lightblue;
+        padding: 10px 0;
+        align-items: center;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+/* ========== Row 3 ========== */
+.Row3 {
+    background-color: lightblue;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+}
+
+.Row3 .con5,
+.Row3 .con6 {
+    width: 100%;
+    text-align: center;
+}
+
+.Row3 .con5 h1 {
+    color: rgb(17, 17, 226);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.Row3 .con5 p {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.Row3 .con5 button {
+    font-size: 20px;
+    background-color: chocolate;
+    margin: 20px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+}
+
+/* ========== Row 4 ========== */
+.Row4 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    background-color: #f9f9f9;
+}
+
+.Row4 .con7,
+.Row4 .con8 {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.Row4 .con7 h1 {
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.Row4 .con7 p {
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Row4 .con7 button {
+    font-size: 18px;
+    background-color: blue;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+}
+
+/* ========== Row 5 ========== */
+.Row5 {
+    background-color: lightblue;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    text-align: center;
+}
+
+.Row5 .con9,
+.Row5 .con10 {
+    width: 100%;
+}
+
+.Row5 .con10 h1 {
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.Row5 .con10 p {
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Row5 .con10 button {
+    font-size: 18px;
+    background-color: chocolate;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+}
+
+/* ========== Row 6 (Services) ========== */
+.Row6 {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.Row6 h1 {
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.mainbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.con11,
+.con12,
+.con13 {
+    width: 80%;
+    max-width: 300px;
+    border: 3px solid whitesmoke;
+    padding: 20px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.con11:hover,
+.con12:hover,
+.con13:hover {
+    background-color: darkorange;
+    color: white;
+}
+
+.con11 img,
+.con12 img,
+.con13 img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.con11 h2,
+.con12 h2,
+.con13 h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.con11 p,
+.con12 p,
+.con13 p {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Row6 button {
+    margin-top: 30px;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: none;
+}
+
+.Row6 button:hover {
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+}
+
+/* ========== Row 7 (Contact) ========== */
+.Row7 {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+}
+
+.Row7 h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.contactinfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.Row7 .form,
+.Row7 .map {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.Row7 .form input,
+.Row7 .form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.Row7 .form button {
+    margin-top: 15px;
+    width: 100%;
+    max-width: 150px;
+    height: 45px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.Row7 .form button:hover {
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+}
+
+.Row7 .map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+/* ========== Responsive Widths for Larger Screens ========== */
+@media (min-width: 768px) {
+    .Row3 .con5,
+    .Row3 .con6,
+    .Row4 .con7,
+    .Row4 .con8,
+    .Row5 .con9,
+    .Row5 .con10,
+    .Row7 .form,
+    .Row7 .map {
+        width: 48%;
+    }
+
+    .con11,
+    .con12,
+    .con13 {
+        width: 30%;
+    }
+
+    .Row2 ul {
+        width: auto;
+    }
+}
